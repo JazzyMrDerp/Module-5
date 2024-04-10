@@ -1,6 +1,11 @@
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.CycleMethod;
+import javafx.scene.paint.RadialGradient;
+import javafx.scene.paint.Stop;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 public class RadialGradiant extends Application {
@@ -11,7 +16,7 @@ public class RadialGradiant extends Application {
             Group root = new Group();
             Scene scene = new Scene(root, 400, 300, Color.WHITE);
             primaryStage.setScene(scene);
-            addRectangle(scene);
+            clone(scene);
             primaryStage.show();
         }
         private void addRectangle(final Scene scene) {
@@ -31,6 +36,8 @@ public class RadialGradiant extends Application {
         }
     }
 
-    private void addRectangle(Scene scene) {
+    private void clone(Scene scene) {
     }
+
+
 }
